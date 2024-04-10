@@ -50,7 +50,7 @@ class CSRF{
         echo '<meta name="'.self::$_attribute_name.'" content="'.self::getToken().'">';
     }
     public static function inputForm(string $method = 'POST'){
-        echo '<form method="'.$method.'" action="'.URL_ROOT.'">';
+        echo '<form method="'.$method.'">';
         echo '<input type="hidden" name="'.self::$_attribute_name.'" value="'.self::getToken().'">';
         echo '</form>';
     }
